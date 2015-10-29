@@ -60,7 +60,9 @@ h6 {
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
-
+.stock-section > h2{
+    text-align: center;
+}
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
