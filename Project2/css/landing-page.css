@@ -168,6 +168,13 @@ h6 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+    
+}
+
+@media (max-width: 1100px) {
+  .stock-tabs{
+  min-width: 170px;
+  }
 }
 
 footer {
