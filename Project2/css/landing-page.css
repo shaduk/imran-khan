@@ -22,7 +22,8 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 18px; 
+    color: red;
 }
 
 .lead {
@@ -60,6 +61,13 @@ h6 {
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
+
+#carousel-text{
+    width: 800px; margin-bottom:40px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+
 .stock-section > h2{
     text-align: center;
 }

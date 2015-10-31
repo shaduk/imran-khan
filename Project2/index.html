@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Imran Khan's Webpage</title>
+    <title>Red Winter Capital</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,16 +45,20 @@
     margin-right: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    position: center;
   }
   .sm-widget {
     width: 300px;
-    min-height: 120px;
-    margin-right: 15px;
+    min-height: 150px;
+    margin-right: auto;
+    margin-left:auto;
     margin-top: 20px;
-    float: left;
+
+    position: center;
   }
   
-  
+  .fill{width:90%;height:100%;background-position:center;background-size:auto;}
+  .fillstock{width:85%;height:100%;background-position:center;background-size:auto;}
   </style>
 
 </head>
@@ -72,7 +76,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Imran Khan's Webpage</a>
+                <a class="navbar-brand topnav" href="#">Red Winter Capital</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -98,7 +102,7 @@
     <!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
-            <div class="container">
+            <div class="container fill">
               <br>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -112,15 +116,33 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/rsz_102.jpg" alt="NYSE" width="700" height="300">
+        <img class=".fill" src="img/rsz_102.jpg" alt="NYSE" width="800" height="300">
+         <div class="container">
+        <div id="carousel-text" class="carousel-caption">
+        <h1>New York Stock Exchange</h1>
+        <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</h3>
+      </div>
+      </div>
       </div>
 
       <div class="item">
-        <img src="img/rsz_lse.jpg" alt="LSE" width="700" height="300">
+        <img class=".fill" src="img/rsz_lse.jpg" alt="LSE" width="800" height="300">
+         <div class="container">
+         <div id="carousel-text" class="carousel-caption">
+        <h1>London Stock Exchange</h1>
+        <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</h3>
+      </div>
+      </div>
       </div>
     
       <div class="item">
-        <img src="img/rsz_bse.jpg" alt="BSE" width="700" height="300">
+        <img class=".fill" src="img/rsz_bse.jpg" alt="BSE" width="800" height="300">
+         <div class="container">
+         <div id="carousel-text" class="carousel-caption">
+          <h1>Bombay Stock Exchange</h1>
+           <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</h3>
+      </div>
+      </div>
       </div>
 
       
@@ -146,11 +168,10 @@
   
   <!-- Stock Section begins Here -->
   <div class="stock-section">
-    <div class="container">
+    <div class="container fillstock">
        <ul class="nav nav-tabs" role="tablist">
          <li class="active"><a href="#tabs-first" role="tab" data-toggle="tab">FX</a></li>
-         <li><a href="#tabs-second" role="tab" data-toggle="tab">US Bond Futures</a></li>
-         <li><a href="#tabs-third" role="tab" data-toggle="tab">US Short Term IR futures</a></li>
+         <li><a href="#tabs-second" role="tab" data-toggle="tab">US Rate Futures</a></li>
          <li><a href="#tabs-fourth" role="tab" data-toggle="tab">Global Equity Indices</a></li>
          <li><a href="#tabs-fifth" role="tab" data-toggle="tab">Commodities</a></li>
          <li><a href="#tabs-sixth" role="tab" data-toggle="tab">Volatility</a></li>
@@ -161,8 +182,7 @@
             <!-- FX TAB content -->
             
            <div class="active tab-pane fade in" id="tabs-first">
-             
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="sm-widget orange sm-frame" data-type="currency" data-symbol="EURUSD" data-loader="true">              
                  <div class="sm-data-property sm-symbol" data-property="Name"></div>
                  <div><i class="eu sm-flag"></i><i class="us sm-flag"></i></div>
@@ -171,7 +191,7 @@
               </div>
             
             
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
               
               <div class="sm-widget blue sm-frame" data-type="currency" data-symbol="USDJPY" data-loader="true">              
                 <div class="sm-data-property sm-symbol" data-property="Name"></div>
@@ -181,7 +201,7 @@
 
             </div>
             
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                
               <div class="sm-widget green sm-frame" data-type="currency" data-symbol="GBPUSD" data-loader="true">              
                 <div class="sm-data-property sm-symbol" data-property="Name"></div>
@@ -191,7 +211,7 @@
              
             </div>
             
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                <div class="sm-widget yellow sm-frame" data-type="currency" data-symbol="AUDUSD" data-loader="true">              
                 <div class="sm-data-property sm-symbol" data-property="Name"></div>
                 <div><i class="au sm-flag"></i><i class="us sm-flag"></i></div>
@@ -201,62 +221,100 @@
         </div>
             <!-- FX TAB Content Ends Here -->  
             
-            <!-- US Bond futures starts here -->
+            <!-- US Rate futures starts here -->
             <div class="tab-pane fade" id="tabs-second">
-              
-                <div class="col-lg-3">
-                    <div class="sm-widget blue sm-frame" data-type="quote" data-symbol="USZ15.CBT" data-loader="true">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div style="margin-bottom: 0px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="USZ15.CBT" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
-                      <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                       <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                       <div class="sm-data-property sm-company" data-property="Change"></div>
                       <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3">
-                     <div class="sm-widget red sm-frame" data-type="quote" data-symbol="TYZ15.CBT" data-loader="true">
+                <div class="col-lg-3 col-md-6">
+                     <div style="margin-bottom: 0px" class="sm-widget red sm-frame" data-type="quote" data-symbol="TYZ15.CBT" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
-                      <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                       <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                       <div class="sm-data-property sm-company" data-property="Change"></div>
                       <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3">
-                     <div class="sm-widget green sm-frame" data-type="quote" data-symbol="FVZ15.CBT" data-loader="true">
+                <div class="col-lg-3 col-md-6">
+                     <div style="margin-bottom: 0px" class="sm-widget green sm-frame" data-type="quote" data-symbol="FVZ15.CBT" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
-                      <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                       <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                       <div class="sm-data-property sm-company" data-property="Change"></div>
                       <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3">
-                     <div class="sm-widget black sm-frame" data-type="quote" data-symbol="TUZ15.CBT" data-loader="true">
+                <div class="col-lg-3 col-md-6">
+                     <div style="margin-bottom: 0px" class="sm-widget black sm-frame" data-type="quote" data-symbol="TUZ15.CBT" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
-                      <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                       <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                       <div class="sm-data-property sm-company" data-property="Change"></div>
                       <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                     </div>
                 </div>
             </div>
-          <!-- US Bond futures ends here -->
+     
           
-          <!-- US Short Term IR Futures starts here -->
-            <div class="tab-pane fade" id="tabs-third">
-                 <div style="width:350px" class="col-lg-4">
+     
+            <div class="row">
+                 <div class="col-lg-4 col-md-6">
+                      <div style="margin-bottom: 0px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="^FVX" data-loader="true">
+                      <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
+                      <div class="sm-data-property sm-company" data-property="Name"></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
+                      <div class="sm-data-property sm-company" data-property="Change"></div>
+                      <div class="sm-data-property sm-company" data-property="PercentChange"></div>
+                      </div>
+                   
+                 </div>
+                 
+                 <div class="col-lg-4 col-md-6">
+                    <div style="margin-bottom: 0px" class="sm-widget red sm-frame" data-type="quote" data-symbol="^TNX" data-loader="true">
+                      <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
+                      <div class="sm-data-property sm-company" data-property="Name"></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
+                      <div class="sm-data-property sm-company" data-property="Change"></div>
+                      <div class="sm-data-property sm-company" data-property="PercentChange"></div>
+                      </div>
+                   
+                 </div>
+                 
+                 <div class="col-lg-4 col-md-6">
+                      <div  style="margin-bottom: 0px" class="sm-widget yellow sm-frame" data-type="quote" data-symbol="^TYX" data-loader="true">
+                      <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
+                      <div class="sm-data-property sm-company" data-property="Name"></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
+                      <div class="sm-data-property sm-company" data-property="Change"></div>
+                      <div class="sm-data-property sm-company" data-property="PercentChange"></div>
+                      </div>
+                   
+                 </div>
+            </div> 
+            
+            <div class="row">
+                 <div class="col-lg-4 col-md-6">
                       <div class="sm-widget blue sm-frame" data-type="quote" data-symbol="GEZ16.CME" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
-                      <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                       <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                       <div class="sm-data-property sm-company" data-property="Change"></div>
                       <div class="sm-data-property sm-company" data-property="PercentChange"></div>
@@ -264,11 +322,11 @@
                    
                  </div>
                  
-                 <div class="col-lg-4">
-                       <div style="width:350px" class="sm-widget red sm-frame" data-type="quote" data-symbol="GEZ17.CME" data-loader="true">
+                 <div class="col-lg-4 col-md-6">
+                       <div class="sm-widget red sm-frame" data-type="quote" data-symbol="GEZ17.CME" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
-                      <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                       <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                       <div class="sm-data-property sm-company" data-property="Change"></div>
                       <div class="sm-data-property sm-company" data-property="PercentChange"></div>
@@ -276,62 +334,62 @@
                    
                  </div>
                  
-                 <div class="col-lg-4">
-                       <div style="width:350px" class="sm-widget yellow sm-frame" data-type="quote" data-symbol="GEZ18.CME" data-loader="true">
+                 <div class="col-lg-4 col-md-6">
+                       <div class="sm-widget yellow sm-frame" data-type="quote" data-symbol="GEZ18.CME" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
-                      <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                      <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                       <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                       <div class="sm-data-property sm-company" data-property="Change"></div>
                       <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                       </div>
                    
                  </div>
-                 
-            </div>
-          <!-- US Short Term IR Futures ends here-->
+                </div> 
+        </div>
+          <!-- US Rate Futures ends here-->
           
           <!-- Global equity Indices starts here -->
             <div class="tab-pane fade" id="tabs-fourth">
                 <div class = "row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div style="margin-bottom: 0px" class="sm-widget orange sm-frame" data-type="quote" data-symbol="^SPX" data-loader="true">
                           
                           <div class="sm-data-property sm-company" data-property="Name"></div>
-                          <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                          <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                           <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                           <div class="sm-data-property sm-company" data-property="Change"></div>
                           <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                         </div>
                     </div>
                 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                          <div style="margin-bottom: 0px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="^NDX" data-loader="true">
                               
                               <div class="sm-data-property sm-company" data-property="Name"></div>
-                              <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                              <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                               <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                               <div class="sm-data-property sm-company" data-property="Change"></div>
                               <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                           </div>
                     </div>
                 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div style="margin-bottom: 0px" class="sm-widget red sm-frame" data-type="quote" data-symbol="^BKX" data-loader="true">
                             
                             <div class="sm-data-property sm-company" data-property="Name"></div>
-                            <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                            <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                             <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                             <div class="sm-data-property sm-company" data-property="Change"></div>
                             <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                         </div>
                     </div>
                 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div style="margin-bottom: 0px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="^STOXX50E" data-loader="true">
                            
                             <div class="sm-data-property sm-company" data-property="Name"></div>
-                            <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                            <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                             <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                             <div class="sm-data-property sm-company" data-property="Change"></div>
                             <div class="sm-data-property sm-company" data-property="PercentChange"></div>
@@ -340,44 +398,44 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div style="margin-bottom: 0px" class="sm-widget yellow sm-frame" data-type="quote" data-symbol="^FTSE" data-loader="true">
                           
                           <div class="sm-data-property sm-company" data-property="Name"></div>
-                          <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                          <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                           <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                           <div class="sm-data-property sm-company" data-property="Change"></div>
                           <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                         </div>
                     </div>
                 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                          <div style="margin-bottom: 0px" class="sm-widget black sm-frame" data-type="quote" data-symbol="^GDAXI" data-loader="true">
                               
                               <div class="sm-data-property sm-company" data-property="Name"></div>
-                              <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                              <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                               <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                               <div class="sm-data-property sm-company" data-property="Change"></div>
                               <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                           </div>
                     </div>
                 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div style="margin-bottom: 0px" class="sm-widget red sm-frame" data-type="quote" data-symbol="^FCHI" data-loader="true">
                             
                             <div class="sm-data-property sm-company" data-property="Name"></div>
-                            <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                            <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                             <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                             <div class="sm-data-property sm-company" data-property="Change"></div>
                             <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                         </div>
                     </div>
                 
-                    <div class="col-lg-3">
-                        <div style="margin-bottom: 0px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="000300.SS" data-loader="true">
+                    <div class="col-lg-3 col-md-6">
+                        <div style="margin-bottom: 0px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="^FCHI" data-loader="true">
                            
                             <div class="sm-data-property sm-company" data-property="Name"></div>
-                            <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                            <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                             <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                             <div class="sm-data-property sm-company" data-property="Change"></div>
                             <div class="sm-data-property sm-company" data-property="PercentChange"></div>
@@ -386,44 +444,44 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="sm-widget red sm-frame" data-type="quote" data-symbol="XIN9.L" data-loader="true">
                           
                           <div class="sm-data-property sm-company" data-property="Name"></div>
-                          <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                          <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                           <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                           <div class="sm-data-property sm-company" data-property="Change"></div>
                           <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                         </div>
                     </div>
                 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                          <div class="sm-widget orange sm-frame" data-type="quote" data-symbol="^HSI" data-loader="true">
                               
                               <div class="sm-data-property sm-company" data-property="Name"></div>
-                              <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                              <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                               <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                               <div class="sm-data-property sm-company" data-property="Change"></div>
                               <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                           </div>
                     </div>
                 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="sm-widget blue sm-frame" data-type="quote" data-symbol="^N225" data-loader="true">
                             
                             <div class="sm-data-property sm-company" data-property="Name"></div>
-                            <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                            <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                             <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                             <div class="sm-data-property sm-company" data-property="Change"></div>
                             <div class="sm-data-property sm-company" data-property="PercentChange"></div>
                         </div>
                     </div>
                 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="sm-widget green sm-frame" data-type="quote" data-symbol="^KS200" data-loader="true">
                             
                             <div class="sm-data-property sm-company" data-property="Name"></div>
-                            <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
+                            <div><span class="sm-data-property sm-quote " data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
                             <div class="sm-data-property sm-company" data-property="LastTradeTime"></div>
                             <div class="sm-data-property sm-company" data-property="Change"></div>
                             <div class="sm-data-property sm-company" data-property="PercentChange"></div>
@@ -437,7 +495,7 @@
           <!-- Commodities starts here -->
             <div class="tab-pane fade" id="tabs-fifth">
                    <div class="col-lg-6">
-                           <div style="width:600px" class="sm-widget green sm-frame" data-type="quote" data-symbol="GCZ15.CMX" data-loader="true">
+                           <div class="sm-widget green sm-frame" data-type="quote" data-symbol="GCZ15.CMX" data-loader="true">
                             <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                             <div class="sm-data-property sm-company" data-property="Name"></div>
                             <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
@@ -448,7 +506,7 @@
                    </div>
                    
                    <div class="col-lg-6">
-                        <div style="width:600px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="CLZ15.NYM" data-loader="true">
+                        <div class="sm-widget blue sm-frame" data-type="quote" data-symbol="CLZ15.NYM" data-loader="true">
                             <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                             <div class="sm-data-property sm-company" data-property="Name"></div>
                             <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
@@ -463,8 +521,8 @@
           
           <!-- Volatility starts here -->
             <div class="tab-pane fade" id="tabs-sixth">
-                 <div style="width:350px" class="col-lg-4">
-                      <div class="sm-widget blue sm-frame" data-type="quote" data-symbol="^VIX" data-loader="true">
+                 <div class="col-lg-4 col-md-6">
+                      <div style="width:350px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="^VIX" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
                       <div><span class="sm-data-property sm-quote" data-property="LastTradePriceOnly"></span><i class="arrow sm-icon"></i></div>
@@ -475,7 +533,7 @@
                    
                  </div>
                  
-                 <div class="col-lg-4">
+                 <div class="col-lg-4 col-md-6">
                        <div style="width:350px" class="sm-widget red sm-frame" data-type="quote" data-symbol="^OVX" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
@@ -487,7 +545,7 @@
                    
                  </div>
                  
-                 <div class="col-lg-4">
+                 <div class="col-lg-4 col-md-6">
                        <div style="width:350px" class="sm-widget blue sm-frame" data-type="quote" data-symbol="^GVX" data-loader="true">
                       <div class="sm-data-property sm-symbol" data-property="Symbol"></div>
                       <div class="sm-data-property sm-company" data-property="Name"></div>
@@ -523,7 +581,7 @@
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <!-- TradingView Widget BEGIN -->
-                    <div id="tv-miniwidget-4ccf6"></div>
+                    <div style="float:right" id="tv-miniwidget-4ccf6"></div>
                     <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
                     <script type="text/javascript">
                     new TradingView.MiniWidget({
@@ -629,7 +687,7 @@
                       "activeTickerBackgroundColor": "#EDF0F3",
                       "large_chart_url": "https://www.tradingview.com/chart/",
                       "noGraph": false,
-                      "width": 300,
+                      "width": 400,
                       "height": 400,
                       "locale": "en"
                     });
@@ -701,7 +759,7 @@
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                         </li>
                         
                         <li>
@@ -756,11 +814,8 @@
     $('.carousel').carousel({
         interval: 4000 //changes the speed
     })
-   $('#tab-content').load($('li.active a[data-toggle="tab"]').attr('div'));
-   $.ajaxSetup(
-{
-    cache: false
-});
+    
+    
     </script>
 
 </body>
