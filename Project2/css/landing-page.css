@@ -121,6 +121,7 @@ h6 {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+    
 }
 
 .banner {
@@ -176,6 +177,7 @@ h6 {
   min-width: 170px;
   }
 }
+
 
 footer {
     padding: 50px 0;
