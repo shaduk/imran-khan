@@ -25,7 +25,6 @@
  */
 
 (function($) {
-  
   $(document).ready(buildWidgets);
 
   var yqlBaseUri = 'https://query.yahooapis.com/v1/public/yql?q={0}&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
@@ -40,6 +39,7 @@
   
   // making yqlRunQuery() available in the global scope
   window.smYqlRunQuery = yqlRunQuery;
+  window.build = buildWidgets;
   
   function buildWidgets() {
     var quoteSymbols = [];
