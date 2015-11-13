@@ -25,13 +25,35 @@ h6 {
 }
 
 .topnav {
-    font-size: 18px; 
+    font-size: 20px; 
     color: white !important;
     background: black !important;
     font-family: 'Libre Baskerville', serif;
     font-style:italic;
     
 }
+.nav.navbar-nav.navbar-right li a {
+    color: white !important
+}
+
+.nav-color{
+    color:white !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover{
+    color:black !important;
+}
+.nav-tabs > li> a:hover {
+    color:black !important;
+}
+.nav-tabs > li.active > a:focus {
+          color: #555555;
+          cursor: default;
+          background-color: #ffffff;
+          border: 1px solid #dddddd;
+          border-bottom-color: transparent;
+          } 
 
 .lead {
     font-size: 16px;
