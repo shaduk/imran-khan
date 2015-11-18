@@ -324,21 +324,24 @@ ul.yui3-aclist-list li:hover {
 
 .sm-frame {
   text-align: center;
+  background: #000;
 }
 
 .sm-frame .sm-symbol {
   font-size: 1.8em;
+  color: #fff;
 }
 
 .sm-frame .sm-company {
   font-size: 1.1em;
-  color: #A5A5A5;
+  color: #CACACA;
 }
 
 .sm-frame .sm-quote {
   font-size: 1.3em;
   font-weight: bold;
   line-height: 1.9em;
+  color: #fff;
 }
 
 .sm-frame .arrow {
