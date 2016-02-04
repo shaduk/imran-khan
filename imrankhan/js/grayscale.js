@@ -41,7 +41,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(51.522396, -0.167109), // London
+        center: new google.maps.LatLng(22.287, 114.17), // London
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -62,10 +62,10 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(51.522396, -0.167109);
+    var myLatLng = new google.maps.LatLng(22.287, 114.17);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: image
+       
     });
 }
